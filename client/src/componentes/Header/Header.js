@@ -1,30 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Header.scss';
 
-import Search from '../Search/Search';
+// import Search from '../Search/Search';
 
-// const Header = (props) => {
-//     return (
-//         <div>
-//             <nav>
-//                 <div className="nav-wrapper container-header">
-//                     <a href="*">{props.titulo}</a>
-//                     <Search />
-//                 </div>
-//             </nav>
-//         </div>
-//     );
-// };
-
-const Header = (props) => {
+const Header = () => {
     return (
-        <div>
-            <nav className="container-header">
-                {/* <img src="/img/logo.png" /> */}
-                <a href="*">{props.titulo}</a>
-                <Search />
-            </nav>
-        </div>
+        <header className="container-header">   
+            <Link to={'/'}>
+                <img src="/img/logo.png" alt="Logo imagen"/>
+            </Link>
+        </header>
     )
 }
 
