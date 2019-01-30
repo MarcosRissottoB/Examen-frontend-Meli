@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { Component} from 'react';
 import './Search.scss';
 
-const Search = () => {
-    return (
-        <div className="container container-search">
-            <div className="row">
-                <input type="text" placeholder="Nunca dejes de buscar"></input>
+class Search extends Component {
+
+    productSearch = (e) => {
+        const term = e.target.value;
+        this.props.search(term);
+    }
+
+    render() {
+        return (
+            <form className="search">
+                <input type="text"
+                 placeholder="Nunca dejes de buscar"
+                 onChange={this.productSearch}
+                 />
                 <button>LUPA</button>
-            </div>
-        </div>
-    );
-};
+            </form>
+        );
+    }
+}
 
 export default Search;

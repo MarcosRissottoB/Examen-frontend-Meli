@@ -3,9 +3,9 @@ import './Inicio.scss';
 
 const Inicio = () => {
     return (
-        <nav>
+        <div>
             <h1>Inicio...</h1>
-        </nav>
+        </div>
     )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductDetail = (props) => {
+const Product = (props) => {
     const {imagen, nombre, precio, id} = props.information;
     return (
         <li>
@@ -14,4 +14,4 @@ const ProductDetail = (props) => {
     )
 }
 
-export default ProductDetail;
+export default Product;
