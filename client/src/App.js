@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 
 //Componentes
-import Routes from './componentes/Routes';
+import Routes from './Routes';
 
 class App extends Component {
   render() {

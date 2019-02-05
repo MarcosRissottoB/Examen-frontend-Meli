@@ -1,8 +1,10 @@
 {
-  "name": "meli-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "name": "client-react",
+  "version": "1.0.0",
+  "description": "Cliente realizado en reactjs",
+  "main": "index.js",
+   "private": false,
+ "dependencies": {
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
@@ -14,18 +16,16 @@
     "sass-loader": "^7.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosRissottoB/Examen-frontend-Meli.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "Marcos Rissotto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcosRissottoB/Examen-frontend-Meli/issues"
+  },
+  "homepage": "https://github.com/MarcosRissottoB/Examen-frontend-Meli#readme"
 }
