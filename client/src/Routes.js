@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 //Componentes
 import Header from './componentes/Header/Header';
-import Inicio from './containers/Inicio/Inicio';
+import Inicio from './componentes/Inicio/Inicio';
 import Products from './containers/Products/Products';
 // import Product from './containers/Product/Product';
-import SingleProduct from './containers/SingleProduct/SingleProduct';
+import SingleProduct from './componentes/SingleProduct/SingleProduct';
 
 //Datos mocks
 import productInformation from '../datos/datos';
@@ -58,14 +58,14 @@ class Routes extends Component {
                     <Header />
                     <Switch>
                         <Route exact path="/" component={Inicio} />
-                        <Route exact path="/products" render={() => (
+                        <Route exact path="/items?search=”" render={() => (
                                 <Products 
                                     products={result}
                                     productSearch = {this.productSearch}
                                 />
                         )}/>
-                        <Route exact path="/product/:productId" render={(props) => {
-                            let productId = props.location.pathname.replace('/product/', '');
+                        <Route exact path="/items/:id" render={(props) => {
+                            let productId = props.location.pathname.replace('/items/', '');
                             return (
                                 <SingleProduct 
                                     product={this.state.products[productId]}
